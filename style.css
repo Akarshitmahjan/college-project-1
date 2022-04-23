@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --main-color: rgb(220, 146, 146);
+    /* --main-color: rgb(220, 146, 146); */
+    --main-color: #df2020;
     --black: #222;
     --white: #fff;
     --light-black: #777;
@@ -111,7 +112,12 @@ section {
     color: black;
 }
 .header img{
-    width: 50px;
+    /* width: 50px; */
+    width: 5rem;
+    margin-left: -6rem;
+}
+.logo-txt{
+    margin-top: -6rem;
 }
 .header span{
     color: red;
@@ -202,7 +208,23 @@ section {
 .home .swiper-button-prev {
     right: 7rem;
 }
-
+.card1{
+    display: flex;
+    justify-content: space-around;
+}
+.card-img
+{
+    width: 30rem;
+}
+.card-txt{
+    width: 30rem;  
+    font-size: medium;
+}
+.centre{
+    text-align: center;
+    font-size: x-large;
+    line-height: 4rem;
+}
 .services .box-container img{
     width: 100px;
 }
