@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JU Sports</title>
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .container {  
+    padding: 50px;  
+  background-color: whitesmoke ;  
+}  
+.container h1{
+    font-size: 25px;
+}
+.container label{
+    font-size: 16px;
+}
+  
+input[type=text], textarea {  
+  width: 50%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: block;  
+  border: none;  
+  background: white;  
+  border: 2px solid black;
+}  
+input[type=text]:focus {  
+  background-color: whitesmoke;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid black;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: rgb(6, 6, 46);  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 12%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>
+
+<body>
+    <!-- header section starts -->
+    <section class="header">
+        <a href="home" class="logo"><img src="JU.png"> <span><b>JU</b></span> Sports</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- header section end -->
+    <form>
+        <div class="container">
+            <center>
+                <h1> Registeration Form </h1>
+            </center>
+            <hr>
+            <label> Firstname </label>
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required />
+            <label> Middlename: </label>
+            <input type="text" name="middlename" placeholder="Middlename" size="15" required />
+            <label> Lastname: </label>
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required />
+            <div>
+                <label>
+                    Choose :
+                </label>
+    
+                <select>
+                    <option value="select">Sport</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Football">Football</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="American Football">American Football</option>
+                    <option value="Badminton">Badminton</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Gender :
+                </label><br>
+                <input type="radio" value="Male" name="gender" checked>Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Other" name="gender"> Other
+    
+            </div>
+            <label>
+                Phone :
+            </label>
+            <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+            <h2> Address :</h2>
+            <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+    </textarea>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+    
+            <label for="text"><b>University</b></label>
+            <input type="text" placeholder="Enter university name" name="name" required>
+    
+            <button type="submit" class="registerbtn">Register</button>
+            </div>
+            </form>
+    <!-- footer starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html"> <i class="fas fa-angle-right"></i>Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+                <a href="events.html"><i class="fas fa-angle-right"></i>Events</a>
+                <a href="gallery.html"><i class="fas fa-angle-right"></i>Gallery</a>
+                <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+            </div>
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="contact.html"> <i class="fas fa-angle-right"></i>Ask questions</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About us</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+123-321-4444</a>
+                <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+                <a href="dean.research@jecrcu.edu.in "><i class="fas fa-email"></i>dean.research@jecrcu.edu.in</a>
+                <a href="https://jecrcuniversity.edu.in/assets/images/location-map.jpg"><i
+                        class="fas fa-map"></i>Jaipur,Vidhani(303905)</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="https://www.facebook.com/JecrcUniversity/"> <i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://www.instagram.com/jecrcuniversity/"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://twitter.com/jecrcuniversity?t=oQANnsvfWQA3P7qEOw2JSw&s=09"><i
+                        class="fab fa-twitter"></i>twitter </a>
+                <a href="https://www.linkedin.com/school/jecrcuniversity/?originalSubdomain=in"><i
+                        class="fab fa-linkedin"></i>Linkedin</a>
+            </div>
+        </div>
+        <div class="credit"> created by <span>a designer</span> | all rights reserved! </div>
+    </section>
+    <!-- footer ends -->
+    </body>
+    </html>
