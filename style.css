@@ -67,6 +67,26 @@ section {
     font-size: 6.5rem;
     color: var(--white);
     text-shadow: var(--text-shadow);
+    -webkit-text-stroke: 0.2vw rgb(220, 146, 146);
+    text-transform: uppercase;
+}
+.heading .JU{
+    position: relative;
+    animation: text 4s infinite;
+}
+@keyframes text{
+    0%{
+        color: whitesmoke;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
 }
 
 .btn {
