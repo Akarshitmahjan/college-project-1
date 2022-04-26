@@ -65,9 +65,10 @@ section {
 
 .heading h2 {
     font-size: 6.5rem;
+    text-align: center;
     color: var(--white);
     text-shadow: var(--text-shadow);
-    -webkit-text-stroke: 0.2vw rgb(220, 146, 146);
+    -webkit-text-stroke: 0.2vw rgb(146, 15, 15);
     text-transform: uppercase;
 }
 .heading .JU{
@@ -136,6 +137,11 @@ section {
     width: 5rem;
     margin-left: -6rem;
 }
+
+
+.logo-txt1{
+    margin-top: -5rem;
+}
 .logo-txt{
     margin-top: -6rem;
 }
@@ -147,6 +153,7 @@ section {
     font-size: 2rem;
     margin-left: 2rem;
     color: black;
+    text-decoration: none;
 }
 
 .header .navbar a:hover {
@@ -158,6 +165,9 @@ section {
     cursor: pointer;
     color: black;
     display: none;
+}
+.image-section{
+    padding: 5rem 1rem;
 }
 .home{
     padding: 0;
@@ -199,10 +209,37 @@ section {
     padding: 1rem 0;
     animation: fadeIn .2s linear backwards .6s;
 }
-.home .slide .content .btn {
+ .content1 {
     animation: fadeIn .3s linear backwards .7s;
+    margin-bottom: 23rem;
 }
-.home .swiper-button-next,
+.text1,.text2{
+    color: black;
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: inherit;
+}
+.btn-design1{
+    font-size: 2.2rem;
+    color: rgb(10, 4, 4);
+    font-weight: bolder;
+    border-block-color: black;
+}
+.btn-design2{
+    font-size: 2.2rem;
+    color: rgb(12, 3, 3);
+    font-weight: bolder;
+    border-block-color: black;
+}
+/* .overlay{
+    background-color: rgb(41 39 34 / 59%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+} */
+/* .home .swiper-button-next,
 .home .swiper-button-prev {
     top: inherit;
     left: inherit;
@@ -227,7 +264,7 @@ section {
 
 .home .swiper-button-prev {
     right: 7rem;
-}
+} */
 .card1{
     display: flex;
     justify-content: space-around;
@@ -294,7 +331,7 @@ section {
     padding: 3rem;
     background: grey;
     color: white;
-    height: 24.8rem;
+    height: 29.3rem;
 }
 .home-about .content h3 {
     font-size: 3rem;

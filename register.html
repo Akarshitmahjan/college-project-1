@@ -14,50 +14,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .container {  
-    padding: 50px;  
-  background-color: whitesmoke ;  
-}  
-.container h1{
-    font-size: 25px;
-}
-.container label{
-    font-size: 16px;
-}
-  
-input[type=text], textarea {  
-  width: 50%;  
-  padding: 15px;  
-  margin: 5px 0 22px 0;  
-  display: block;  
-  border: none;  
-  background: white;  
-  border: 2px solid black;
-}  
-input[type=text]:focus {  
-  background-color: whitesmoke;  
-  outline: none;  
-}  
- div {  
-            padding: 10px 0;  
-         }  
-hr {  
-  border: 1px solid black;  
-  margin-bottom: 25px;  
-}  
-.registerbtn {  
-  background-color: rgb(6, 6, 46);  
-  color: white;  
-  padding: 16px 20px;  
-  margin: 8px 0;  
-  border: none;  
-  cursor: pointer;  
-  width: 12%;  
-  opacity: 0.9;  
-}  
-.registerbtn:hover {  
-  opacity: 1;  
-}  
+    .container {
+        padding: 50px;
+        background-color: whitesmoke;
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .container label {
+        font-size: 18px;
+    }
+
+    input[type=text],
+    textarea {
+        width: 50%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: block;
+        border: none;
+        background: white;
+        border: 2px solid black;
+    }
+
+    input[type=text]:focus {
+        background-color: whitesmoke;
+        outline: none;
+    }
+
+    div {
+        padding: 10px 0;
+    }
+
+    hr {
+        border: 1px solid black;
+        margin-bottom: 25px;
+    }
+
+    .registerbtn {
+        background-color: rgb(6, 6, 46);
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 12%;
+        opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
 </style>
 
 <body>
@@ -65,7 +73,7 @@ hr {
     <section class="header">
         <a href="index.html" class="logo"><img src="JU.png"> <span><b>JU</b></span> Sports</a>
         <nav class="navbar">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="events.html">Events</a>
             <a href="gallery.html">Gallery</a>
@@ -86,12 +94,12 @@ hr {
             <input type="text" name="middlename" placeholder="Middlename" size="15" required />
             <label> Lastname: </label>
             <input type="text" name="lastname" placeholder="Lastname" size="15" required />
-            <div>
-                <label>
+            <div style="width: 35rem;font-size: 2rem;font-weight: 500;">
+                <label style="margin-right : 2rem;">
                     Choose :
                 </label>
-    
-                <select>
+
+                <select style="font-size: large;">
                     <option value="select">Sport</option>
                     <option value="Basketball">Basketball</option>
                     <option value="Football">Football</option>
@@ -101,14 +109,23 @@ hr {
                     <option value="Badminton">Badminton</option>
                 </select>
             </div>
-            <div>
-                <label>
-                    Gender :
-                </label><br>
-                <input type="radio" value="Male" name="gender" checked>Male
-                <input type="radio" value="Female" name="gender"> Female
-                <input type="radio" value="Other" name="gender"> Other
-    
+            <div style="width: 50rem; display: flex;">
+                <div class="gender">
+                    <label>
+                        Gender :
+                    </label>
+                </div>
+                    <div class="gtype" style="display: flex; margin-left: 2rem;" >
+                        <input type="radio" value="Male" name="gender" checked style="margin-top: 0.5rem; margin-right: 1rem;">
+                        <p style="font-size: medium;">Male</p>
+                        <input type="radio" value="Female" name="gender"style="margin-top: 0.5rem;
+                        margin-left: 1rem; margin-right: 1rem;">
+                        <p style="font-size: medium;"> Female </p>
+                        <input type="radio" value="Other" name="gender" style="margin-top: 0.5rem;
+                        margin-left: 1rem; margin-right: 1rem">
+                        <p style="font-size: medium;"> Other </p>
+                    </div>
+               
             </div>
             <label>
                 Phone :
@@ -119,13 +136,13 @@ hr {
     </textarea>
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
-    
+
             <label for="text"><b>University</b></label>
             <input type="text" placeholder="Enter university name" name="name" required>
-    
+
             <button type="submit" class="registerbtn">Register</button>
-            </div>
-            </form>
+        </div>
+    </form>
     <!-- footer starts -->
     <section class="footer">
         <div class="box-container">
@@ -163,5 +180,6 @@ hr {
         <div class="credit"> created by <span>a designer</span> | all rights reserved! </div>
     </section>
     <!-- footer ends -->
-    </body>
-    </html>
+</body>
+
+</html>
