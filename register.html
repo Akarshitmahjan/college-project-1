@@ -43,7 +43,7 @@
         outline: none;
     }
 
-    div {
+    .gender-type {
         padding: 10px 0;
     }
 
@@ -71,7 +71,12 @@
 <body>
     <!-- header section starts -->
     <section class="header">
-        <a href="index.html" class="logo"><img src="JU.png"> <span><b>JU</b></span> Sports</a>
+        <div class="logo">
+            <a href="index.html" class="logo"><img src="JU.png"> </a>
+            <div class="logo-txt">
+                <span><b>JU</b></span> Sports
+            </div>
+        </div>
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -109,7 +114,7 @@
                     <option value="Badminton">Badminton</option>
                 </select>
             </div>
-            <div style="width: 50rem; display: flex;">
+            <div class="gender-type" style="width: 50rem; display: flex;">
                 <div class="gender">
                     <label>
                         Gender :
